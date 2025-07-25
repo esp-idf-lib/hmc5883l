@@ -11,7 +11,7 @@ Driver for 3-axis digital compass HMC5883L and HMC5983L.
 ## Installation
 
 ```sh
-idf.py add-dependency "esp-idf-lib/hmc5883l^1.0.0
+idf.py add-dependency esp-idf-lib/hmc5883l^1.0.0
 ```
 
 ## Support
