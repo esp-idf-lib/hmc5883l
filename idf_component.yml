@@ -1,5 +1,5 @@
 ---
-version: 1.0.1
+version: 1.0.2
 description: Driver for 3-axis digital compass HMC5883L and HMC5983L
 license: BSD-3
 targets:
