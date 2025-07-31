@@ -72,7 +72,8 @@
 
 static const char *TAG = "hmc5883l";
 
-static const float gain_values [] = {
+static const float gain_values [] =
+{
     [HMC5883L_GAIN_1370] = 0.73,
     [HMC5883L_GAIN_1090] = 0.92,
     [HMC5883L_GAIN_820]  = 1.22,
@@ -318,7 +319,8 @@ esp_err_t hmc5883l_get_raw_data(hmc5883l_dev_t *dev, hmc5883l_raw_data_t *data)
             CHECK(hmc5883l_data_is_ready(dev, &dready));
             if (timeout_expired(start, CONFIG_HMC5883L_MEAS_TIMEOUT))
                 return ESP_ERR_TIMEOUT;
-        } while (!dready);
+        }
+        while (!dready);
     }
     uint8_t buf[6];
     uint8_t reg = REG_DX_H;
