@@ -1,7 +1,7 @@
 ---
 version: 1.0.8
 description: Driver for 3-axis digital compass HMC5883L and HMC5983L
-license: BSD-3
+license: BSD-3-Clause
 dependencies:
   esp-idf-lib/i2cdev:
     version: "*"
